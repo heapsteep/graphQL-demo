@@ -1,0 +1,16 @@
+type Person{
+    id:ID,
+    name:String,
+    age:Int
+    department:String
+    salary:Float
+}
+
+type Query{
+    getPersons:[Person]
+    getPersonById(id:Int):Person
+}
+
+type Mutation{
+    updatePersonName(id:ID,name:String):Person
+}
